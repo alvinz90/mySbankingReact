@@ -1,7 +1,7 @@
 This is a demo mobile banking React Native project to show basic mobile banking process (login screen --> account summary page with mock data).
- ![ScreenShot1](https://github.com/alvinz90/mySbankingReact/tree/master/images/ScreenShots/Screenshot_20170926-140213.png) 
- ![ScreenShot2](https://github.com/alvinz90/mySbankingReact/tree/master/images/ScreenShots/Screenshot_20170926-140229.png) 
- ![ScreenShot3](https://github.com/alvinz90/mySbankingReact/tree/master/images/ScreenShots/Screenshot_20170926-140235.png) 
+ ![ScreenShot1](https://github.com/alvinz90/mySbankingReact/tree/master/images/ScreenShots/Screenshot_20170926-140213.png?raw=true "Login") 
+ ![ScreenShot2](https://github.com/alvinz90/mySbankingReact/tree/master/images/ScreenShots/Screenshot_20170926-140229.png?raw=true "Account Summary") 
+ ![ScreenShot3](https://github.com/alvinz90/mySbankingReact/tree/master/images/ScreenShots/Screenshot_20170926-140235.png?raw=true "Side Menu") 
  
 ## How to use this Demo project  
 
