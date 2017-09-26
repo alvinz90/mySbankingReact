@@ -10,36 +10,36 @@ To use this demo project, follow these steps to setup your local dev enviroment:
 
 2) install react-native cli: within the node.js command window, input this command:
 
-*		npm i -g react-native-cli*
+*		npm i -g react-native-cli
 
 3) create this app with this command:
 
-*		react-native init mySbankingReact*
+*		react-native init mySbankingReact
 
 4) install react navigation:
 
-*		cd mySbankingReact*
-*		npm i --save react-navigation*
+*		cd mySbankingReact
+*		npm i --save react-navigation
 
 5) install lodash (for json array grouping -- for sectionlist databinding ):
 
-*		cd mySbankingReact*
+*		cd mySbankingReact
 
 ### npm install:
 
-*      npm i -g npm*
-*      npm i --save lodash*
+*      npm i -g npm
+*      npm i --save lodash
 
 ### or you can do the yarn install: 
 
-*      yarn add lodash *
+*      yarn add lodash 
 
 6) get the source code files from github and merge them into the directory of 'mySbankingReact' (overwrite 'index.android.js' and 'index.ios.js')
 
 7) launch the app using the command below (for android / ios):
 
-*		react-native run-android *
-*		react-native run-ios *
+*		react-native run-android 
+*		react-native run-ios 
 
 ## Generate Android unsigned APK
 
@@ -51,13 +51,13 @@ Create debug build:
 
 Mac:
 
-*		cd android *
-*		./gradlew assembleDebug *
+*		cd android 
+*		./gradlew assembleDebug 
 
 windows:
 
-*		cd android *
-*		gradlew assembleDebug *
+*		cd android 
+*		gradlew assembleDebug 
 ------------------------------------------------------------------------------------------------------------------
 
 ## IOS / Android Debug 
@@ -70,7 +70,7 @@ http://localhost:8081/debugger-ui
 ### Method 2
 within the terminal / command window, type in these commands (ios / android) for the log:
 
-*		react-native log-ios 	*
-*		react-native log-android *
+*		react-native log-ios 	
+*		react-native log-android 
 
 use the console.log to print the variables' values.
