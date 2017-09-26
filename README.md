@@ -25,14 +25,12 @@ To use this demo project, follow these steps to setup your local dev enviroment:
 
 *		cd mySbankingReact*
 
-# npm install:
-----------------------------------------------------------------------------------------------------------
+### npm install:
 
 *      npm i -g npm*
 *      npm i --save lodash*
 
-# or you can do the yarn install: 
-----------------------------------------------------------------------------------------------------------
+### or you can do the yarn install: 
 
 *      yarn add lodash *
 
@@ -47,30 +45,32 @@ To use this demo project, follow these steps to setup your local dev enviroment:
 
 To generate Android unsigned APK that can run on the android device without using the React Package server, use the steps below:
 
-react-native bundle --dev false --platform android --entry-file index.android.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug
-------------------------------------------------------------------------------------------------------------------
+*		react-native bundle --dev false --platform android --entry-file index.android.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug *
 
 Create debug build:
-------------------------------------------------------------------------------------------------------------------
-cd android
-./gradlew assembleDebug
-//---(above is for mac, for windows, use below command:)
-gradlew assembleDebug
+
+Mac:
+
+*		cd android *
+*		./gradlew assembleDebug *
+
+windows:
+
+*		cd android *
+*		gradlew assembleDebug *
 ------------------------------------------------------------------------------------------------------------------
 
 ## IOS / Android Debug 
 
-# Method 1
+### Method 1
 Press Cmd + D (shake the device for Android) to get the [react developer menu], and click 'Debug JS Remotely'; make sure the react Package server is up and running; open Chrome browser, type in this url:
 
-------------------------------------------------------------------------------------------------------------------
 http://localhost:8081/debugger-ui
--------------------------------------------
 
-# Method 2
+### Method 2
 within the terminal / command window, type in these commands (ios / android) for the log:
 
-$ react-native log-ios
-$ react-native log-android
+*		react-native log-ios 	*
+*		react-native log-android *
 
 use the console.log to print the variables' values.
