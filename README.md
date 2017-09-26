@@ -45,7 +45,7 @@ To use this demo project, follow these steps to setup your local dev enviroment:
 
 To generate Android unsigned APK that can run on the android device without using the React Package server, use the steps below:
 
-*		react-native bundle --dev false --platform android --entry-file index.android.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug *
+*		react-native bundle --dev false --platform android --entry-file index.android.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug 
 
 Create debug build:
 
