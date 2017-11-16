@@ -32,9 +32,11 @@ let myDrawer = DrawerNavigator(
       initialRouteName: 'Login',
       drawerPosition: 'left',
       drawerWidth: 280,
+      drawerBackgroundColor: '#373737',
       contentOptions: {
         style: {
-          backgroundColor: '#373737',
+          color: 'red',
+          backgroundColor: 'green',
           flex: 1,
         },
         labelStyle: {

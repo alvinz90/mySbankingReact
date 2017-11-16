@@ -5,10 +5,12 @@ import {
     Text,
     View,
     Image,
+    ImageBackground,
     Button,
+    Dimensions,
   } from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import LoginForm from './LoginForm'
+import LoginForm from './LoginForm';
 
 export default class Login extends Component {
     static navigationOptions = {
@@ -25,19 +27,24 @@ export default class Login extends Component {
     render() {
         global.MenuDrawerOpen = false;         
         const { navigate } = this.props.navigation;
+        const resizeMode = 'center';
+        console.log('888999 1001 b the window width is ', Dimensions.get('window').width);
+        
         return (
             <View style={styles.container}>
-                <Image source={require('../../images/sbanking_bg1.png')} style={styles.mybackground}>
-                <View style={styles.logocontainer}> 
-                    <Image
-                        style={styles.logo}
-                        source={require('../../images/sbanking_logo1.png')}                   
-                    />
-                    <LoginForm navigate = { navigate } />
+                <ImageBackground source={require('../../images/sbanking_bg1.png')} 
+                    style={styles.mybackground}>
+                    <View style={styles.logocontainer}> 
+                        <Image
+                            style={styles.logo}
+                            source={require('../../images/sbanking_logo1.png')}                   
+                        />
+                        <LoginForm navigate = { navigate } />
 
-                </View>
+                    </View>
+                </ImageBackground>
 
-                </Image>
+                
             </View>
         ) 
         
@@ -45,9 +52,12 @@ export default class Login extends Component {
 }
 
 const styles = StyleSheet.create({
+
     mybackground: {
         flex: 1,
-        resizeMode: 'cover', // or 'stretch'
+        width: Dimensions.get('window').width,
+
+        //resizeMode: 'cover', // or 'stretch'
         // remove width and height to override fixed static size
         //width: null,
         //height: null,
@@ -56,7 +66,7 @@ const styles = StyleSheet.create({
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: 'lightblue',
+
     },
     logo: {
         width: 280,
@@ -64,7 +74,7 @@ const styles = StyleSheet.create({
     },
     logocontainer: {
         alignItems: 'center',
-        marginTop: 180,
+        marginTop: 150,
         flexGrow: 1,
     },
     welcome: {
